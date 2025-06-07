@@ -23,5 +23,15 @@ document.addEventListener('DOMContentLoaded', function () {
     btn.addEventListener('click', openCloseModal);
   });
   btnCloseModal.addEventListener('click', openCloseModal);
+  overlay.addEventListener('click', function (ev) {
+    if (ev.target === overlay) {
+      openCloseModal();
+    }
+  });
+  document.addEventListener('keydown', function (ev) {
+    if (ev.code === 'Escape' && modal.classList.contains('show')) {
+      openCloseModal();
+    }
+  });
 });
 //# sourceMappingURL=script.dev.js.map
