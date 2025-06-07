@@ -9,7 +9,7 @@
   <body>
     <main>
       <button class="btn fz16-btn btn-openmodal hide" data-modal>click me</button>
-      <div class="modal__wrapper">
+      <div class="modal">
         <div class="modal__item">
           <h3>Оформление заказа</h3>
           <div class="btn__round btn__round-close" data-close></div>
@@ -20,29 +20,33 @@
           <div class="modal__product-items">
             <div class="btn__round btn__round-minus"> </div>
             <div class="modal__product-numbers fz18-numbers">1</div>
-            <div class="btn__round btn__round-plus">                   </div>
+            <div class="btn__round btn__round-plus">             </div>
           </div>
         </div>
-        <div class="modal__instr fz16">Товар и инструкция придут на вашу электронную почту в течении минуты</div>
+        <div class="modal__instr">
+          <div class="modal__instr-title fz16">Товар и инструкция придут на вашу электронную почту в течении минуты</div>
+        </div>
         <div class="modal__item"> 
           <h4>Ваш E-mail</h4>
           <div class="modal__input">
-            <input type="email" name="email" id="email" required placeholder="Введите Ваш E-mail" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}">
+            <input class="fz16 fz16-input" type="email" name="email" id="email" required placeholder="Введите Ваш E-mail" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}">
             <button class="btn-promo"><span class="fz16">Добавить промокод</span></button>
           </div>
         </div>
         <div class="modal__item"> 
-          <div class="modal__numbergoods fz18"></div>
-          <div class="modal__price fz18"></div>
+          <div class="modal__numbergoods fz18">Товары</div>
+          <div class="modal__price fz18">1790₽</div>
         </div>
         <div class="modal__item"> 
           <div class="modal__total fz20">Итого:</div>
-          <div class="modal__totalprice fz20"></div>
+          <div class="modal__totalprice fz20">1790₽</div>
         </div>
-        <button class="btn-submit fz16-btn">Перейти к оплате</button>
-        <div class="modal__item"> 
-          <input class="modal__check" type="checkbox">
-          <div class="modal__offert">Отправляя данные, я соглашаюсь c<span>политикой конфиденциальности и договором оферты</span></div>
+        <button class="btn btn-submit fz16-btn">Перейти к оплате</button>
+        <div class="modal__item">
+          <label class="modal__check"> 
+            <input type="checkbox"><span></span>
+          </label>
+          <div class="modal__offert fz14">Отправляя данные, я соглашаюсь c <a href="#">политикой конфиденциальности </a>и <a href="#">договором оферты</a></div>
         </div>
       </div>
     </main>
